@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+package user;
+
+message User {
+  int32 id = 1;
+  string fname = 2;
+  string city = 3;
+  uint64 phone = 4;
+  float height = 5;
+  bool married = 6;
+}
+
+service UserService {
+  rpc GetUserById (UserRequest) returns (User);
+  rpc GetUsersByIds (UserListRequest) returns (UserList);
+}
+
+message UserRequest {
+  int32 user_id = 1;
+}
+
+message UserListRequest {
+  repeated int32 user_ids = 1;
+}
+
+message UserList {
+  repeated User users = 1;
+}

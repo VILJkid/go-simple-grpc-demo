@@ -12,10 +12,12 @@ import (
 const port = ":8081"
 
 func main() {
+	// Create a new gRPC server and register the User service
 	server := grpc.NewServer()
 	userServiceServer := service.NewUserServiceServer()
 	proto.RegisterUserServiceServer(server, userServiceServer)
 
+	// Start the server
 	listener, err := net.Listen("tcp", port)
 	if err != nil {
 		log.Fatalf("Failed to start listener %v", err)

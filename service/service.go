@@ -16,6 +16,7 @@ func NewUserServiceServer() *userServiceServer {
 	return &userServiceServer{}
 }
 
+// GetUserById returns the requested single user detail
 func (s *userServiceServer) GetUserById(ctx context.Context, req *proto.UserRequest) (*proto.User, error) {
 	userId := req.GetUserId()
 	if userId < 0 {
@@ -32,6 +33,7 @@ func (s *userServiceServer) GetUserById(ctx context.Context, req *proto.UserRequ
 	return user, nil
 }
 
+// GetUsersByIds returns requested multiple user details
 func (s *userServiceServer) GetUsersByIds(ctx context.Context, req *proto.UserListRequest) (*proto.UserList, error) {
 	userIds := req.GetUserIds()
 	if len(userIds) == 0 {

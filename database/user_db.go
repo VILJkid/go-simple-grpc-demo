@@ -15,6 +15,7 @@ func MockDatabaseConnection() *userDatabase {
 	return &userDatabase{}
 }
 
+// MockDatabaseBulkEntries mocks the database and populates the user details
 func (udb *userDatabase) MockDatabaseBulkEntries() {
 	udb.userDetails = make(map[int32]*proto.User)
 

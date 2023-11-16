@@ -8,10 +8,10 @@ import (
 	"github.com/VILJkid/go-simple-grpc-demo/service"
 )
 
+// TestGetUserByIdExist tests if the user exists
 func TestGetUserByIdExist(t *testing.T) {
 	server := service.NewUserServiceServer()
 
-	// Test case: User exists
 	userID := int32(1)
 	request := &proto.UserRequest{UserId: userID}
 	response, err := server.GetUserById(context.Background(), request)
@@ -25,6 +25,7 @@ func TestGetUserByIdExist(t *testing.T) {
 	}
 }
 
+// TestGetUserByIdNotExist tests if the user doesn't exist
 func TestGetUserByIdNotExist(t *testing.T) {
 	server := service.NewUserServiceServer()
 
@@ -42,10 +43,10 @@ func TestGetUserByIdNotExist(t *testing.T) {
 	}
 }
 
+// TestGetUsersByIdsExist tests if multiple user exists
 func TestGetUsersByIdsExist(t *testing.T) {
 	server := service.NewUserServiceServer()
 
-	// Test case: Users exist
 	userIDs := []int32{0, 2, 4}
 	request := &proto.UserListRequest{UserIds: userIDs}
 	response, err := server.GetUsersByIds(context.Background(), request)
@@ -59,10 +60,10 @@ func TestGetUsersByIdsExist(t *testing.T) {
 	}
 }
 
+// TestGetUsersByIdsNotExist tests if some user doesn't exist
 func TestGetUsersByIdsNotExist(t *testing.T) {
 	server := service.NewUserServiceServer()
 
-	// Test case: Some users do not exist
 	invalidUserIDs := []int32{0, 10, 4}
 	invalidRequest := &proto.UserListRequest{UserIds: invalidUserIDs}
 	invalidResponse, err := server.GetUsersByIds(context.Background(), invalidRequest)

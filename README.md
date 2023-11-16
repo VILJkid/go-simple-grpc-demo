@@ -4,7 +4,7 @@ This is a simple gRPC service demo written in Go. It includes user-related funct
 
 **Disclaimer:**
 
-This project is part of an assignment for Totality Corp and is intended for educational purposes only. It is not intended for use in any production, commercial, or real-world application. The code may not adhere to best practices, security standards, or other considerations required for production-ready software.
+This project is part of an assignment for [Totality Corp](https://www.totalitycorp.com/) and is intended for educational purposes only. It is not intended for use in any production, commercial, or real-world application. The code may not adhere to best practices, security standards, or other considerations required for production-ready software.
 
 Use this project at your own discretion, and be aware that it may contain intentional simplifications or educational constructs that may not be suitable for real-world scenarios.
 
@@ -49,4 +49,4 @@ go test -v
 
 ## License
 
-    This project is licensed under the MIT License - see the [[LICENSE]] file for details.
+This project is licensed under the MIT License - see the ![License](https://img.shields.io/badge/License-MIT-blue.svg) file for details.

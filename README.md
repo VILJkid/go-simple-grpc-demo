@@ -44,6 +44,7 @@ Use this project at your own discretion, and be aware that it may contain intent
 ## Running Tests
 
 ```bash
+cd service
 go test -v
 ```
 

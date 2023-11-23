@@ -1,8 +1,10 @@
 # gRPC Service Demo
 
+<p align="center">
 [![Go Language](https://img.shields.io/badge/Language-Go-blue?logo=go)](https://go.dev/dl/)
 [![Docker Container](https://img.shields.io/badge/Container-Docker-blue?logo=docker)](https://docs.docker.com/get-docker/)
 [![MIT License](https://img.shields.io/github/license/VILJkid/go-simple-grpc-demo)](/LICENSE)
+</p>
 
 This is a simple gRPC service demo written in Go. It includes user-related functionality with mock database entries.
 

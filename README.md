@@ -1,6 +1,7 @@
 # gRPC Service Demo
 
 <p align="center">
+<a href="https://go.dev/dl/" alt="Go Language">https://img.shields.io/badge/Language-Go-blue?logo=go</a>
 [![Go Language](https://img.shields.io/badge/Language-Go-blue?logo=go)](https://go.dev/dl/)
 [![Docker Container](https://img.shields.io/badge/Container-Docker-blue?logo=docker)](https://docs.docker.com/get-docker/)
 [![MIT License](https://img.shields.io/github/license/VILJkid/go-simple-grpc-demo)](/LICENSE)

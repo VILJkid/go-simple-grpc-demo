@@ -2,6 +2,12 @@
 
 <p align="center">
 <a href="https://go.dev/dl/"><img src="https://img.shields.io/badge/Language-Go-blue?logo=go" alt="Go Language"></a>
+
+<a href="https://docs.docker.com/get-docker/"><img src="https://img.shields.io/badge/Container-Docker-blue?logo=docker" alt="Docker Container"></a>
+
+<a href="/LICENSE"><img src="https://img.shields.io/github/license/VILJkid/go-simple-grpc-demo" alt="MIT License"></a>
+
+
 [![Go Language](https://img.shields.io/badge/Language-Go-blue?logo=go)](https://go.dev/dl/)
 [![Docker Container](https://img.shields.io/badge/Container-Docker-blue?logo=docker)](https://docs.docker.com/get-docker/)
 [![MIT License](https://img.shields.io/github/license/VILJkid/go-simple-grpc-demo)](/LICENSE)
